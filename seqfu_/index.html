@@ -1,0 +1,578 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.0, mkdocs-material-8.5.6">
+    
+    
+      
+        <title>SeqFu - BGCFlow Report</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.20d9efc8.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#seqfu" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="BGCFlow Report" class="md-header__button md-logo" aria-label="BGCFlow Report" data-md-component="logo">
+      
+  <img src="../assets/bgcflow/BGCFlow_logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            BGCFlow Report
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              SeqFu
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href=".." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../seqfu.md" class="md-tabs__link">
+      seqfu
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../mash/" class="md-tabs__link">
+      mash
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../fastani/" class="md-tabs__link">
+      fastani
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../antismash/" class="md-tabs__link">
+      antismash
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../bigscape/" class="md-tabs__link">
+      bigscape
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../bigslice/" class="md-tabs__link">
+      bigslice
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../automlst-wrapper/" class="md-tabs__link">
+      automlst-wrapper
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="BGCFlow Report" class="md-nav__button md-logo" aria-label="BGCFlow Report" data-md-component="logo">
+      
+  <img src="../assets/bgcflow/BGCFlow_logo.svg" alt="logo">
+
+    </a>
+    BGCFlow Report
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../seqfu.md" class="md-nav__link">
+        seqfu
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mash/" class="md-nav__link">
+        mash
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fastani/" class="md-nav__link">
+        fastani
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../antismash/" class="md-nav__link">
+        antismash
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bigscape/" class="md-nav__link">
+        bigscape
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bigslice/" class="md-nav__link">
+        bigslice
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../automlst-wrapper/" class="md-nav__link">
+        automlst-wrapper
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+
+
+
+                  
+
+
+<h1 id="seqfu">SeqFu</h1>
+<p>Summary of <a href="https://github.com/telatin/seqfu2">Seqfu</a> results from project: [test] </p>
+<h2 id="qc-statistics">QC Statistics</h2>
+<p><a href="https://github.com/telatin/seqfu2">Seqfu</a> provides a sequence statistic overview of the genomes in the dataset.</p>
+<div id="altair-viz-4a1a113235d8493aa3fd6ed99f7172c0"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-4a1a113235d8493aa3fd6ed99f7172c0") {
+      outputDiv = document.getElementById("altair-viz-4a1a113235d8493aa3fd6ed99f7172c0");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm//vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm//vega-lite@4.17.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm//vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "4.17.0"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}, "title": {"anchor": "middle", "fontSize": 20, "offset": 10, "orient": "top"}}, "repeat": {"column": ["Count", "Total", "N50"], "row": ["Count", "Total", "N50"]}, "spec": {"data": {"name": "data-99eb458536536f7fce895f6d732f9e3a"}, "mark": "circle", "encoding": {"color": {"field": "Total", "type": "quantitative"}, "tooltip": [{"field": "genome_id", "type": "nominal"}, {"field": "Count", "type": "quantitative"}, {"field": "Total", "type": "quantitative"}, {"field": "gc", "type": "quantitative"}, {"field": "N50", "type": "quantitative"}, {"field": "N75", "type": "quantitative"}, {"field": "N90", "type": "quantitative"}, {"field": "AuN", "type": "quantitative"}, {"field": "Min", "type": "quantitative"}, {"field": "Max", "type": "quantitative"}], "x": {"field": {"repeat": "column"}, "scale": {"zero": false}, "type": "quantitative"}, "y": {"field": {"repeat": "row"}, "scale": {"zero": false}, "type": "quantitative"}}, "height": 150, "selection": {"selector001": {"type": "interval", "bind": "scales", "encodings": ["x", "y"]}}, "width": 150}, "title": "Genome QC Statistics", "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "datasets": {"data-99eb458536536f7fce895f6d732f9e3a": [{"genome_id": "GCF_000009765.2", "Min": 94287, "N25": 9025608, "N50": 9025608, "AuN": 8933270.592263728, "gc": 0.7070135127652237, "Max": 9025608, "N75": 9025608, "Count": 2, "Total": 9119895, "N90": 9025608, "Avg": 4559947.5, "gtdb_release": "R207", "Domain": "d__Bacteria", "Phylum": "p__Actinobacteriota", "Class": "c__Actinomycetia", "Order": "o__Streptomycetales", "Family": "f__Streptomycetaceae", "Genus": "g__Streptomyces", "Species": "avermitilis", "Organism": "s__Streptomyces avermitilis", "accession": "GCA_000009765.2", "name": "GCF_000009765.2", "trna_aa_count": 20.0, "contig_count": 2.0, "n50_contigs": 9025608.0, "longest_contig": 9025608.0, "scaffold_count": 2.0, "n50_scaffolds": 9025608.0, "longest_scaffold": 9025608.0, "genome_size": 9119895.0, "gc_percentage": 70.70135127652237, "ambiguous_bases": 0.0, "checkm_completeness": 99.89, "checkm_contamination": 0.79, "checkm_strain_heterogeneity": 0.0, "lsu_5s_count": 6, "ssu_count": 6, "lsu_23s_count": 6, "protein_count": 7915, "coding_density": 86.30100456200428, "ncbi_genbank_assembly_accession": "GCA_000009765.2", "ncbi_strain_identifiers": "MA-4680", "ncbi_assembly_level": "Complete Genome", "ncbi_assembly_name": "ASM976v2", "ncbi_assembly_type": "na", "ncbi_bioproject": "PRJNA224116", "ncbi_biosample": "SAMD00061088", "ncbi_country": null, "ncbi_date": "2016-03-24", "ncbi_genome_category": null, "ncbi_genome_representation": "full", "ncbi_isolate": null, "ncbi_isolation_source": null, "ncbi_lat_lon": null, "ncbi_molecule_count": 2, "ncbi_cds_count": 7850, "ncbi_refseq_category": "representative genome", "ncbi_seq_rel_date": "2016/03/24", "ncbi_spanned_gaps": 0, "ncbi_species_taxid": 33903, "ncbi_ssu_count": 6, "ncbi_submitter": "NITE", "ncbi_taxid": 227882, "ncbi_total_gap_length": 0, "ncbi_translation_table": 11, "ncbi_trna_count": 77, "ncbi_unspanned_gaps": 0, "ncbi_version_status": "latest", "ncbi_wgs_master": null, "gtdbTypeDesignation": "type strain of species", "gtdbTypeDesignationSources": "LPSN", "lpsnTypeDesignation": "type strain of species", "dsmzTypeDesignation": "type strain of species", "lpsnPriorityYear": 2002.0, "gtdbTypeSpeciesOfGenus": false, "ncbi_taxonomy": "d__Bacteria;p__Actinobacteria;c__Actinomycetia;o__Streptomycetales;f__Streptomycetaceae;g__Streptomyces;s__Streptomyces avermitilis", "ncbi_taxonomy_unfiltered": "d__Bacteria;x__Terrabacteria group;p__Actinobacteria;c__Actinomycetia;o__Streptomycetales;f__Streptomycetaceae;g__Streptomyces;s__Streptomyces avermitilis;x__Streptomyces avermitilis MA-4680 = NBRC 14893", "gtdb_representative": true, "gtdb_genome_representative": "RS_GCF_000009765.2", "ncbi_type_material_designation": "assembly from type material", "gtdbDomain": "d__Bacteria", "gtdbPhylum": "p__Actinobacteriota", "gtdbClass": "c__Actinomycetia", "gtdbOrder": "o__Streptomycetales", "gtdbFamily": "f__Streptomycetaceae", "gtdbGenus": "g__Streptomyces", "gtdbSpecies": "s__Streptomyces avermitilis", "gtdbTypeDesignation.1": "type strain of species", "subunit_summary": "5S/16S/23S", "speciesRepName": "GCA_000009765.2", "speciesClusterCount": 9, "lpsnUrl": "https://lpsn.dsmz.de/species/streptomyces-avermitilis", "link_ncbi_taxonomy": "<a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=2\">d__Bacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=201174\">p__Actinobacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1760\">c__Actinomycetia</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=85011\">o__Streptomycetales</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=2062\">f__Streptomycetaceae</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1883\">g__Streptomyces</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=33903\">s__Streptomyces avermitilis</a>", "link_ncbi_taxonomy_unfiltered": "<a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=2\">d__Bacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1783272\">x__Terrabacteria group</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=201174\">p__Actinobacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1760\">c__Actinomycetia</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=85011\">o__Streptomycetales</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=2062\">f__Streptomycetaceae</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1883\">g__Streptomyces</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=33903\">s__Streptomyces avermitilis</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=227882\">x__Streptomyces avermitilis MA-4680 = NBRC 14893</a>", "0": "{'taxon': 'd__Bacteria', 'taxonId': '2'}", "1": "{'taxon': 'p__Actinobacteria', 'taxonId': '201174'}", "2": "{'taxon': 'c__Actinomycetia', 'taxonId': '1760'}", "3": "{'taxon': 'o__Streptomycetales', 'taxonId': '85011'}", "4": "{'taxon': 'f__Streptomycetaceae', 'taxonId': '2062'}", "5": "{'taxon': 'g__Streptomyces', 'taxonId': '1883'}", "6": "{'taxon': 's__Streptomyces avermitilis', 'taxonId': '33903'}", "ncbiTaxonomyUnfiltered": "[{'taxon': 'd__Bacteria', 'taxonId': '2'}, {'taxon': 'x__Terrabacteria group', 'taxonId': '1783272'}, {'taxon': 'p__Actinobacteria', 'taxonId': '201174'}, {'taxon': 'c__Actinomycetia', 'taxonId': '1760'}, {'taxon': 'o__Streptomycetales', 'taxonId': '85011'}, {'taxon': 'f__Streptomycetaceae', 'taxonId': '2062'}, {'taxon': 'g__Streptomyces', 'taxonId': '1883'}, {'taxon': 's__Streptomyces avermitilis', 'taxonId': '33903'}, {'taxon': 'x__Streptomyces avermitilis MA-4680 = NBRC 14893', 'taxonId': '227882'}]"}, {"genome_id": "GCF_000010605.1", "Min": 8545929, "N25": 8545929, "N50": 8545929, "AuN": 8545929.0, "gc": 0.7222740792721306, "Max": 8545929, "N75": 8545929, "Count": 1, "Total": 8545929, "N90": 8545929, "Avg": 8545929.0, "gtdb_release": "R207", "Domain": "d__Bacteria", "Phylum": "p__Actinobacteriota", "Class": "c__Actinomycetia", "Order": "o__Streptomycetales", "Family": "f__Streptomycetaceae", "Genus": "g__Streptomyces", "Species": "griseus", "Organism": "s__Streptomyces griseus", "accession": "GCA_000010605.1", "name": "GCF_000010605.1", "trna_aa_count": 20.0, "contig_count": 1.0, "n50_contigs": 8545929.0, "longest_contig": 8545929.0, "scaffold_count": 1.0, "n50_scaffolds": 8545929.0, "longest_scaffold": 8545929.0, "genome_size": 8545929.0, "gc_percentage": 72.22740792721306, "ambiguous_bases": 0.0, "checkm_completeness": 99.84, "checkm_contamination": 0.0, "checkm_strain_heterogeneity": 0.0, "lsu_5s_count": 6, "ssu_count": 6, "lsu_23s_count": 6, "protein_count": 7113, "coding_density": 87.70147751051992, "ncbi_genbank_assembly_accession": "GCA_000010605.1", "ncbi_strain_identifiers": "NBRC 13350", "ncbi_assembly_level": "Complete Genome", "ncbi_assembly_name": "ASM1060v1", "ncbi_assembly_type": "na", "ncbi_bioproject": "PRJNA224116", "ncbi_biosample": "SAMD00060929", "ncbi_country": null, "ncbi_date": "2008-04-08", "ncbi_genome_category": null, "ncbi_genome_representation": "full", "ncbi_isolate": null, "ncbi_isolation_source": null, "ncbi_lat_lon": null, "ncbi_molecule_count": 1, "ncbi_cds_count": 7092, "ncbi_refseq_category": "representative genome", "ncbi_seq_rel_date": "2008/04/08", "ncbi_spanned_gaps": 0, "ncbi_species_taxid": 1911, "ncbi_ssu_count": 6, "ncbi_submitter": "The University of Tokyo", "ncbi_taxid": 455632, "ncbi_total_gap_length": 0, "ncbi_translation_table": 11, "ncbi_trna_count": 67, "ncbi_unspanned_gaps": 0, "ncbi_version_status": "latest", "ncbi_wgs_master": null, "gtdbTypeDesignation": "not type material", "gtdbTypeDesignationSources": null, "lpsnTypeDesignation": "not type material", "dsmzTypeDesignation": "not type material", "lpsnPriorityYear": null, "gtdbTypeSpeciesOfGenus": false, "ncbi_taxonomy": "d__Bacteria;p__Actinobacteria;c__Actinomycetia;o__Streptomycetales;f__Streptomycetaceae;g__Streptomyces;s__Streptomyces griseus", "ncbi_taxonomy_unfiltered": "d__Bacteria;x__Terrabacteria group;p__Actinobacteria;c__Actinomycetia;o__Streptomycetales;f__Streptomycetaceae;g__Streptomyces;x__Streptomyces griseus group;x__Streptomyces griseus subgroup;s__Streptomyces griseus;sb__Streptomyces griseus subsp. griseus;x__Streptomyces griseus subsp. griseus NBRC 13350", "gtdb_representative": false, "gtdb_genome_representative": "RS_GCF_900460065.1", "ncbi_type_material_designation": null, "gtdbDomain": "d__Bacteria", "gtdbPhylum": "p__Actinobacteriota", "gtdbClass": "c__Actinomycetia", "gtdbOrder": "o__Streptomycetales", "gtdbFamily": "f__Streptomycetaceae", "gtdbGenus": "g__Streptomyces", "gtdbSpecies": "s__Streptomyces griseus", "gtdbTypeDesignation.1": "not type material", "subunit_summary": "5S/16S/23S", "speciesRepName": "GCA_900460065.1", "speciesClusterCount": 10, "lpsnUrl": "https://lpsn.dsmz.de/species/streptomyces-griseus", "link_ncbi_taxonomy": "<a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=2\">d__Bacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=201174\">p__Actinobacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1760\">c__Actinomycetia</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=85011\">o__Streptomycetales</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=2062\">f__Streptomycetaceae</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1883\">g__Streptomyces</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1911\">s__Streptomyces griseus</a>", "link_ncbi_taxonomy_unfiltered": "<a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=2\">d__Bacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1783272\">x__Terrabacteria group</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=201174\">p__Actinobacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1760\">c__Actinomycetia</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=85011\">o__Streptomycetales</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=2062\">f__Streptomycetaceae</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1883\">g__Streptomyces</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=629295\">x__Streptomyces griseus group</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1482596\">x__Streptomyces griseus subgroup</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1911\">s__Streptomyces griseus</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=67263\">sb__Streptomyces griseus subsp. griseus</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=455632\">x__Streptomyces griseus subsp. griseus NBRC 13350</a>", "0": "{'taxon': 'd__Bacteria', 'taxonId': '2'}", "1": "{'taxon': 'p__Actinobacteria', 'taxonId': '201174'}", "2": "{'taxon': 'c__Actinomycetia', 'taxonId': '1760'}", "3": "{'taxon': 'o__Streptomycetales', 'taxonId': '85011'}", "4": "{'taxon': 'f__Streptomycetaceae', 'taxonId': '2062'}", "5": "{'taxon': 'g__Streptomyces', 'taxonId': '1883'}", "6": "{'taxon': 's__Streptomyces griseus', 'taxonId': '1911'}", "ncbiTaxonomyUnfiltered": "[{'taxon': 'd__Bacteria', 'taxonId': '2'}, {'taxon': 'x__Terrabacteria group', 'taxonId': '1783272'}, {'taxon': 'p__Actinobacteria', 'taxonId': '201174'}, {'taxon': 'c__Actinomycetia', 'taxonId': '1760'}, {'taxon': 'o__Streptomycetales', 'taxonId': '85011'}, {'taxon': 'f__Streptomycetaceae', 'taxonId': '2062'}, {'taxon': 'g__Streptomyces', 'taxonId': '1883'}, {'taxon': 'x__Streptomyces griseus group', 'taxonId': '629295'}, {'taxon': 'x__Streptomyces griseus subgroup', 'taxonId': '1482596'}, {'taxon': 's__Streptomyces griseus', 'taxonId': '1911'}, {'taxon': 'sb__Streptomyces griseus subsp. griseus', 'taxonId': '67263'}, {'taxon': 'x__Streptomyces griseus subsp. griseus NBRC 13350', 'taxonId': '455632'}]"}, {"genome_id": "GCF_000091305.1", "Min": 10148695, "N25": 10148695, "N50": 10148695, "AuN": 10148695.0, "gc": 0.7145283211289727, "Max": 10148695, "N75": 10148695, "Count": 1, "Total": 10148695, "N90": 10148695, "Avg": 10148695.0, "gtdb_release": "R207", "Domain": "d__Bacteria", "Phylum": "p__Actinobacteriota", "Class": "c__Actinomycetia", "Order": "o__Streptomycetales", "Family": "f__Streptomycetaceae", "Genus": "g__Streptomyces", "Species": "scabiei", "Organism": "s__Streptomyces scabiei", "accession": "GCA_000091305.1", "name": "GCF_000091305.1", "trna_aa_count": 20.0, "contig_count": 1.0, "n50_contigs": 10148695.0, "longest_contig": 10148695.0, "scaffold_count": 1.0, "n50_scaffolds": 10148695.0, "longest_scaffold": 10148695.0, "genome_size": 10148695.0, "gc_percentage": 71.45283211289727, "ambiguous_bases": 0.0, "checkm_completeness": 100.0, "checkm_contamination": 0.0, "checkm_strain_heterogeneity": 0.0, "lsu_5s_count": 6, "ssu_count": 6, "lsu_23s_count": 6, "protein_count": 8791, "coding_density": 87.16080244799947, "ncbi_genbank_assembly_accession": "GCA_000091305.1", "ncbi_strain_identifiers": "87.22", "ncbi_assembly_level": "Complete Genome", "ncbi_assembly_name": "ASM9130v1", "ncbi_assembly_type": "na", "ncbi_bioproject": "PRJNA224116", "ncbi_biosample": "SAMEA2272773", "ncbi_country": null, "ncbi_date": "2009-10-06", "ncbi_genome_category": null, "ncbi_genome_representation": "full", "ncbi_isolate": null, "ncbi_isolation_source": null, "ncbi_lat_lon": null, "ncbi_molecule_count": 1, "ncbi_cds_count": 8737, "ncbi_refseq_category": "representative genome", "ncbi_seq_rel_date": "2009/10/06", "ncbi_spanned_gaps": 0, "ncbi_species_taxid": 1930, "ncbi_ssu_count": 6, "ncbi_submitter": "Wellcome Trust Sanger Institute", "ncbi_taxid": 680198, "ncbi_total_gap_length": 0, "ncbi_translation_table": 11, "ncbi_trna_count": 73, "ncbi_unspanned_gaps": 0, "ncbi_version_status": "latest", "ncbi_wgs_master": null, "gtdbTypeDesignation": "not type material", "gtdbTypeDesignationSources": null, "lpsnTypeDesignation": "not type material", "dsmzTypeDesignation": "not type material", "lpsnPriorityYear": null, "gtdbTypeSpeciesOfGenus": false, "ncbi_taxonomy": "d__Bacteria;p__Actinobacteria;c__Actinomycetia;o__Streptomycetales;f__Streptomycetaceae;g__Streptomyces;s__Streptomyces scabiei", "ncbi_taxonomy_unfiltered": "d__Bacteria;x__Terrabacteria group;p__Actinobacteria;c__Actinomycetia;o__Streptomycetales;f__Streptomycetaceae;g__Streptomyces;s__Streptomyces scabiei;x__Streptomyces scabiei 87.22", "gtdb_representative": true, "gtdb_genome_representative": "RS_GCF_000091305.1", "ncbi_type_material_designation": null, "gtdbDomain": "d__Bacteria", "gtdbPhylum": "p__Actinobacteriota", "gtdbClass": "c__Actinomycetia", "gtdbOrder": "o__Streptomycetales", "gtdbFamily": "f__Streptomycetaceae", "gtdbGenus": "g__Streptomyces", "gtdbSpecies": "s__Streptomyces scabiei", "gtdbTypeDesignation.1": "not type material", "subunit_summary": "5S/16S/23S", "speciesRepName": "GCA_000091305.1", "speciesClusterCount": 16, "lpsnUrl": "https://lpsn.dsmz.de/species/streptomyces-scabiei", "link_ncbi_taxonomy": "<a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=2\">d__Bacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=201174\">p__Actinobacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1760\">c__Actinomycetia</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=85011\">o__Streptomycetales</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=2062\">f__Streptomycetaceae</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1883\">g__Streptomyces</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1930\">s__Streptomyces scabiei</a>", "link_ncbi_taxonomy_unfiltered": "<a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=2\">d__Bacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1783272\">x__Terrabacteria group</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=201174\">p__Actinobacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1760\">c__Actinomycetia</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=85011\">o__Streptomycetales</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=2062\">f__Streptomycetaceae</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1883\">g__Streptomyces</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1930\">s__Streptomyces scabiei</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=680198\">x__Streptomyces scabiei 87.22</a>", "0": "{'taxon': 'd__Bacteria', 'taxonId': '2'}", "1": "{'taxon': 'p__Actinobacteria', 'taxonId': '201174'}", "2": "{'taxon': 'c__Actinomycetia', 'taxonId': '1760'}", "3": "{'taxon': 'o__Streptomycetales', 'taxonId': '85011'}", "4": "{'taxon': 'f__Streptomycetaceae', 'taxonId': '2062'}", "5": "{'taxon': 'g__Streptomyces', 'taxonId': '1883'}", "6": "{'taxon': 's__Streptomyces scabiei', 'taxonId': '1930'}", "ncbiTaxonomyUnfiltered": "[{'taxon': 'd__Bacteria', 'taxonId': '2'}, {'taxon': 'x__Terrabacteria group', 'taxonId': '1783272'}, {'taxon': 'p__Actinobacteria', 'taxonId': '201174'}, {'taxon': 'c__Actinomycetia', 'taxonId': '1760'}, {'taxon': 'o__Streptomycetales', 'taxonId': '85011'}, {'taxon': 'f__Streptomycetaceae', 'taxonId': '2062'}, {'taxon': 'g__Streptomyces', 'taxonId': '1883'}, {'taxon': 's__Streptomyces scabiei', 'taxonId': '1930'}, {'taxon': 'x__Streptomyces scabiei 87.22', 'taxonId': '680198'}]"}, {"genome_id": "GCF_000092385.1", "Min": 11936683, "N25": 11936683, "N50": 11936683, "AuN": 11936683.0, "gc": 0.7075458902611387, "Max": 11936683, "N75": 11936683, "Count": 1, "Total": 11936683, "N90": 11936683, "Avg": 11936683.0, "gtdb_release": "R207", "Domain": "d__Bacteria", "Phylum": "p__Actinobacteriota", "Class": "c__Actinomycetia", "Order": "o__Streptomycetales", "Family": "f__Streptomycetaceae", "Genus": "g__Streptomyces", "Species": "milbemycinicus", "Organism": "s__Streptomyces milbemycinicus", "accession": "GCA_000092385.1", "name": "GCF_000092385.1", "trna_aa_count": 20.0, "contig_count": 1.0, "n50_contigs": 11936683.0, "longest_contig": 11936683.0, "scaffold_count": 1.0, "n50_scaffolds": 11936683.0, "longest_scaffold": 11936683.0, "genome_size": 11936683.0, "gc_percentage": 70.75458902611386, "ambiguous_bases": 0.0, "checkm_completeness": 99.74, "checkm_contamination": 1.96, "checkm_strain_heterogeneity": 28.57, "lsu_5s_count": 6, "ssu_count": 6, "lsu_23s_count": 6, "protein_count": 9968, "coding_density": 88.50826481695124, "ncbi_genbank_assembly_accession": "GCA_000092385.1", "ncbi_strain_identifiers": "BCW-1", "ncbi_assembly_level": "Complete Genome", "ncbi_assembly_name": "ASM9238v1", "ncbi_assembly_type": "na", "ncbi_bioproject": "PRJNA224116", "ncbi_biosample": "SAMN02603683", "ncbi_country": null, "ncbi_date": "2010-05-28", "ncbi_genome_category": null, "ncbi_genome_representation": "full", "ncbi_isolate": null, "ncbi_isolation_source": null, "ncbi_lat_lon": null, "ncbi_molecule_count": 1, "ncbi_cds_count": 9974, "ncbi_refseq_category": "representative genome", "ncbi_seq_rel_date": "2010/05/28", "ncbi_spanned_gaps": 0, "ncbi_species_taxid": 379067, "ncbi_ssu_count": 6, "ncbi_submitter": "Northeast Agricultural University", "ncbi_taxid": 749414, "ncbi_total_gap_length": 0, "ncbi_translation_table": 11, "ncbi_trna_count": 68, "ncbi_unspanned_gaps": 0, "ncbi_version_status": "latest", "ncbi_wgs_master": null, "gtdbTypeDesignation": "not type material", "gtdbTypeDesignationSources": null, "lpsnTypeDesignation": "not type material", "dsmzTypeDesignation": "not type material", "lpsnPriorityYear": null, "gtdbTypeSpeciesOfGenus": false, "ncbi_taxonomy": "d__Bacteria;p__Actinobacteria;c__Actinomycetia;o__Streptomycetales;f__Streptomycetaceae;g__Streptomyces;s__Streptomyces bingchenggensis", "ncbi_taxonomy_unfiltered": "d__Bacteria;x__Terrabacteria group;p__Actinobacteria;c__Actinomycetia;o__Streptomycetales;f__Streptomycetaceae;g__Streptomyces;s__Streptomyces bingchenggensis;x__Streptomyces bingchenggensis BCW-1", "gtdb_representative": false, "gtdb_genome_representative": "RS_GCF_002154605.1", "ncbi_type_material_designation": null, "gtdbDomain": "d__Bacteria", "gtdbPhylum": "p__Actinobacteriota", "gtdbClass": "c__Actinomycetia", "gtdbOrder": "o__Streptomycetales", "gtdbFamily": "f__Streptomycetaceae", "gtdbGenus": "g__Streptomyces", "gtdbSpecies": "s__Streptomyces milbemycinicus", "gtdbTypeDesignation.1": "not type material", "subunit_summary": "5S/16S/23S", "speciesRepName": "GCA_002154605.1", "speciesClusterCount": 2, "lpsnUrl": "https://lpsn.dsmz.de/species/streptomyces-milbemycinicus", "link_ncbi_taxonomy": "<a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=2\">d__Bacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=201174\">p__Actinobacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1760\">c__Actinomycetia</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=85011\">o__Streptomycetales</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=2062\">f__Streptomycetaceae</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1883\">g__Streptomyces</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=379067\">s__Streptomyces bingchenggensis</a>", "link_ncbi_taxonomy_unfiltered": "<a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=2\">d__Bacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1783272\">x__Terrabacteria group</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=201174\">p__Actinobacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1760\">c__Actinomycetia</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=85011\">o__Streptomycetales</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=2062\">f__Streptomycetaceae</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1883\">g__Streptomyces</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=379067\">s__Streptomyces bingchenggensis</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=749414\">x__Streptomyces bingchenggensis BCW-1</a>", "0": "{'taxon': 'd__Bacteria', 'taxonId': '2'}", "1": "{'taxon': 'p__Actinobacteria', 'taxonId': '201174'}", "2": "{'taxon': 'c__Actinomycetia', 'taxonId': '1760'}", "3": "{'taxon': 'o__Streptomycetales', 'taxonId': '85011'}", "4": "{'taxon': 'f__Streptomycetaceae', 'taxonId': '2062'}", "5": "{'taxon': 'g__Streptomyces', 'taxonId': '1883'}", "6": "{'taxon': 's__Streptomyces bingchenggensis', 'taxonId': '379067'}", "ncbiTaxonomyUnfiltered": "[{'taxon': 'd__Bacteria', 'taxonId': '2'}, {'taxon': 'x__Terrabacteria group', 'taxonId': '1783272'}, {'taxon': 'p__Actinobacteria', 'taxonId': '201174'}, {'taxon': 'c__Actinomycetia', 'taxonId': '1760'}, {'taxon': 'o__Streptomycetales', 'taxonId': '85011'}, {'taxon': 'f__Streptomycetaceae', 'taxonId': '2062'}, {'taxon': 'g__Streptomyces', 'taxonId': '1883'}, {'taxon': 's__Streptomyces bingchenggensis', 'taxonId': '379067'}, {'taxon': 'x__Streptomyces bingchenggensis BCW-1', 'taxonId': '749414'}]"}, {"genome_id": "GCF_000147815.2", "Min": 191151, "N25": 10657107, "N50": 10657107, "AuN": 10207524.26487521, "gc": 0.708763616177782, "Max": 10657107, "N75": 10657107, "Count": 3, "Total": 11138313, "N90": 10657107, "Avg": 3712771.0, "gtdb_release": "R207", "Domain": "d__Bacteria", "Phylum": "p__Actinobacteriota", "Class": "c__Actinomycetia", "Order": "o__Streptomycetales", "Family": "f__Streptomycetaceae", "Genus": "g__Streptomyces", "Species": "violaceusniger_A", "Organism": "s__Streptomyces violaceusniger_A", "accession": "GCA_000147815.3", "name": "GCF_000147815.2", "trna_aa_count": 20.0, "contig_count": 3.0, "n50_contigs": 10657107.0, "longest_contig": 10657107.0, "scaffold_count": 3.0, "n50_scaffolds": 10657107.0, "longest_scaffold": 10657107.0, "genome_size": 11138313.0, "gc_percentage": 70.8763616177782, "ambiguous_bases": 0.0, "checkm_completeness": 100.0, "checkm_contamination": 1.05, "checkm_strain_heterogeneity": 0.0, "lsu_5s_count": 6, "ssu_count": 6, "lsu_23s_count": 6, "protein_count": 9451, "coding_density": 87.27394354962013, "ncbi_genbank_assembly_accession": "GCA_000147815.3", "ncbi_strain_identifiers": "Tu 4113", "ncbi_assembly_level": "Complete Genome", "ncbi_assembly_name": "ASM14781v3", "ncbi_assembly_type": "na", "ncbi_bioproject": "PRJNA224116", "ncbi_biosample": "SAMN00016986", "ncbi_country": null, "ncbi_date": "2011-08-23", "ncbi_genome_category": null, "ncbi_genome_representation": "full", "ncbi_isolate": null, "ncbi_isolation_source": null, "ncbi_lat_lon": null, "ncbi_molecule_count": 3, "ncbi_cds_count": 9434, "ncbi_refseq_category": "na", "ncbi_seq_rel_date": "2011/08/23", "ncbi_spanned_gaps": 0, "ncbi_species_taxid": 68280, "ncbi_ssu_count": 6, "ncbi_submitter": "US DOE Joint Genome Institute (JGI-PGF)", "ncbi_taxid": 653045, "ncbi_total_gap_length": 0, "ncbi_translation_table": 11, "ncbi_trna_count": 66, "ncbi_unspanned_gaps": 0, "ncbi_version_status": "latest", "ncbi_wgs_master": null, "gtdbTypeDesignation": "not type material", "gtdbTypeDesignationSources": null, "lpsnTypeDesignation": "not type material", "dsmzTypeDesignation": "not type material", "lpsnPriorityYear": null, "gtdbTypeSpeciesOfGenus": false, "ncbi_taxonomy": "d__Bacteria;p__Actinobacteria;c__Actinomycetia;o__Streptomycetales;f__Streptomycetaceae;g__Streptomyces;s__Streptomyces violaceusniger", "ncbi_taxonomy_unfiltered": "d__Bacteria;x__Terrabacteria group;p__Actinobacteria;c__Actinomycetia;o__Streptomycetales;f__Streptomycetaceae;g__Streptomyces;x__Streptomyces violaceusniger group;s__Streptomyces violaceusniger;x__Streptomyces violaceusniger Tu 4113", "gtdb_representative": true, "gtdb_genome_representative": "RS_GCF_000147815.2", "ncbi_type_material_designation": null, "gtdbDomain": "d__Bacteria", "gtdbPhylum": "p__Actinobacteriota", "gtdbClass": "c__Actinomycetia", "gtdbOrder": "o__Streptomycetales", "gtdbFamily": "f__Streptomycetaceae", "gtdbGenus": "g__Streptomyces", "gtdbSpecies": "s__Streptomyces violaceusniger_A", "gtdbTypeDesignation.1": "not type material", "subunit_summary": "5S/16S/23S", "speciesRepName": "GCA_000147815.3", "speciesClusterCount": 4, "lpsnUrl": null, "link_ncbi_taxonomy": "<a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=2\">d__Bacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=201174\">p__Actinobacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1760\">c__Actinomycetia</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=85011\">o__Streptomycetales</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=2062\">f__Streptomycetaceae</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1883\">g__Streptomyces</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=68280\">s__Streptomyces violaceusniger</a>", "link_ncbi_taxonomy_unfiltered": "<a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=2\">d__Bacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1783272\">x__Terrabacteria group</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=201174\">p__Actinobacteria</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1760\">c__Actinomycetia</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=85011\">o__Streptomycetales</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=2062\">f__Streptomycetaceae</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1883\">g__Streptomyces</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=2839105\">x__Streptomyces violaceusniger group</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=68280\">s__Streptomyces violaceusniger</a>; <a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=653045\">x__Streptomyces violaceusniger Tu 4113</a>", "0": "{'taxon': 'd__Bacteria', 'taxonId': '2'}", "1": "{'taxon': 'p__Actinobacteria', 'taxonId': '201174'}", "2": "{'taxon': 'c__Actinomycetia', 'taxonId': '1760'}", "3": "{'taxon': 'o__Streptomycetales', 'taxonId': '85011'}", "4": "{'taxon': 'f__Streptomycetaceae', 'taxonId': '2062'}", "5": "{'taxon': 'g__Streptomyces', 'taxonId': '1883'}", "6": "{'taxon': 's__Streptomyces violaceusniger', 'taxonId': '68280'}", "ncbiTaxonomyUnfiltered": "[{'taxon': 'd__Bacteria', 'taxonId': '2'}, {'taxon': 'x__Terrabacteria group', 'taxonId': '1783272'}, {'taxon': 'p__Actinobacteria', 'taxonId': '201174'}, {'taxon': 'c__Actinomycetia', 'taxonId': '1760'}, {'taxon': 'o__Streptomycetales', 'taxonId': '85011'}, {'taxon': 'f__Streptomycetaceae', 'taxonId': '2062'}, {'taxon': 'g__Streptomyces', 'taxonId': '1883'}, {'taxon': 'x__Streptomyces violaceusniger group', 'taxonId': '2839105'}, {'taxon': 's__Streptomyces violaceusniger', 'taxonId': '68280'}, {'taxon': 'x__Streptomyces violaceusniger Tu 4113', 'taxonId': '653045'}]"}]}}, {"mode": "vega-lite"});
+</script>
+
+<h2 id="references">References</h2>
+<ul>
+<li><em>Telatin, A., Birolo, G., &amp; Fariselli, P. SeqFu [Computer software]. GITHUB: https://github.com/telatin/seqfu2</em></li>
+</ul>
+
+
+
+
+
+                
+
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/NPGMgroup" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://github.com/NBChub/bgcflow" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "toc.integrate"], "search": "../assets/javascripts/workers/search.5bf1dace.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.078830c0.min.js"></script>
+      
+    
+  </body>
+</html>

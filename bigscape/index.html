@@ -1,0 +1,667 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.0, mkdocs-material-8.5.6">
+    
+    
+      
+        <title>bigscape - BGCFlow Report</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.20d9efc8.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#big-scape" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="BGCFlow Report" class="md-header__button md-logo" aria-label="BGCFlow Report" data-md-component="logo">
+      
+  <img src="../assets/bgcflow/BGCFlow_logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            BGCFlow Report
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              bigscape
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href=".." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../seqfu.md" class="md-tabs__link">
+      seqfu
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../mash/" class="md-tabs__link">
+      mash
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../fastani/" class="md-tabs__link">
+      fastani
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../antismash/" class="md-tabs__link">
+      antismash
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  <li class="md-tabs__item">
+    <a href="./" class="md-tabs__link md-tabs__link--active">
+      bigscape
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../bigslice/" class="md-tabs__link">
+      bigslice
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../automlst-wrapper/" class="md-tabs__link">
+      automlst-wrapper
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="BGCFlow Report" class="md-nav__button md-logo" aria-label="BGCFlow Report" data-md-component="logo">
+      
+  <img src="../assets/bgcflow/BGCFlow_logo.svg" alt="logo">
+
+    </a>
+    BGCFlow Report
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../seqfu.md" class="md-nav__link">
+        seqfu
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mash/" class="md-nav__link">
+        mash
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fastani/" class="md-nav__link">
+        fastani
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../antismash/" class="md-nav__link">
+        antismash
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          bigscape
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        bigscape
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#bgc-distribution" class="md-nav__link">
+    BGC Distribution
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bigslice/" class="md-nav__link">
+        bigslice
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../automlst-wrapper/" class="md-nav__link">
+        automlst-wrapper
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+
+
+
+                  
+
+
+<h1 id="big-scape">BiG-SCAPE</h1>
+<p>Summary of <a href="https://github.com/medema-group/BiG-SCAPE">BiG-SCAPE</a> results from project: <code>[test]</code></p>
+<p><a class="md-button" href="http://localhost:http://localhost:8002/bigscape/result_as6.1.1" target="_blank">BiG-SCAPE result</a></p>
+<h2 id="bgc-distribution">BGC Distribution</h2>
+<p><a href="https://github.com/medema-group/BiG-SCAPE">BiG-SCAPE</a> constructs sequence similarity networks of Biosynthetic Gene Clusters (BGCs) and groups them into Gene Cluster Families (GCFs). BiG-SCAPE does this by rapidly calculating a distance matrix between gene clusters based on a comparison of their protein domain content, order, copy number and sequence identity.</p>
+<table id="9b3caf06-1fd3-4b24-b4b2-afbbc5b9efc1" class="display compact"style="max-width:100%"><thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>product</th>
+      <th>bigscape_class</th>
+      <th>genome_id</th>
+      <th>gcf_0.30</th>
+      <th>Clan Number</th>
+      <th>fam_id_0.30</th>
+      <th>fam_type_0.30</th>
+      <th>fam_known_compounds_0.30</th>
+    </tr>
+  </thead><tbody><tr><td>Loading... (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)</td></tr></tbody></table>
+<style>
+table td {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+table th {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+thead input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+tfoot input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+</style>
+<p><link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css"></p>
+<script type="module">
+    // Import jquery and DataTable
+    import 'https://code.jquery.com/jquery-3.6.0.min.js';
+    import dt from 'https://cdn.datatables.net/1.12.1/js/jquery.dataTables.mjs';
+    dt($);
+
+    // Define the table data
+    const data = [["NC_003155.5.region001", "terpene", "Terpene", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000009765.2/' target='_blank'>GCF_000009765.2</a>", 1911, NaN, 172, "unknown_family", "u_Terpene_172"], ["NC_003155.5.region002", "lassopeptide", "RiPPs", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000009765.2/' target='_blank'>GCF_000009765.2</a>", 1912, NaN, 150, "unknown_family", "u_RiPPs_150"], ["NC_003155.5.region003", "T1PKS", "PKSI", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000009765.2/' target='_blank'>GCF_000009765.2</a>", 1903, 16.0, 10, "known_family", "filipin;pentamycin"], ["NC_003155.5.region004", "NRPS", "NRPS", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000009765.2/' target='_blank'>GCF_000009765.2</a>", 1914, NaN, 119, "unknown_family", "u_NRPS_119"], ["NC_003155.5.region005", "NRPS-like.NRPS.T1PKS.PKS-like", "PKS-NRP_Hybrids", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000009765.2/' target='_blank'>GCF_000009765.2</a>", 1915, NaN, 103, "unknown_family", "u_PKS-NRP_Hybrids_103"], ["NC_003155.5.region006", "T1PKS", "PKSI", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000009765.2/' target='_blank'>GCF_000009765.2</a>", 1916, 16.0, 39, "unknown_family", "u_PKSI_39"], ["NC_003155.5.region007", "terpene", "Terpene", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000009765.2/' target='_blank'>GCF_000009765.2</a>", 602, NaN, 36, "known_family", "carotenoid"], ["NC_003155.5.region008", "melanin", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000009765.2/' target='_blank'>GCF_000009765.2</a>", 1918, NaN, 25, "known_family", "melanin"], ["NC_003155.5.region009", "T1PKS", "PKSI", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000009765.2/' target='_blank'>GCF_000009765.2</a>", 1919, 16.0, 40, "unknown_family", "u_PKSI_40"], ["NC_003155.5.region010", "terpene", "Terpene", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000009765.2/' target='_blank'>GCF_000009765.2</a>", 632, NaN, 4, "known_family", "hopene"], ["NC_003155.5.region011", "siderophore", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000009765.2/' target='_blank'>GCF_000009765.2</a>", 1921, NaN, 29, "unknown_family", "u_Others_29"], ["NC_003155.5.region012", "terpene", "Terpene", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000009765.2/' target='_blank'>GCF_000009765.2</a>", 1922, NaN, 178, "unknown_family", "u_Terpene_178"], ["NC_003155.5.region013", "lassopeptide", "RiPPs", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000009765.2/' target='_blank'>GCF_000009765.2</a>", 1923, NaN, 155, "unknown_family", "u_RiPPs_155"], ["NC_003155.5.region014", "RiPP-like", "RiPPs", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000009765.2/' target='_blank'>GCF_000009765.2</a>", 1924, NaN, 153, "unknown_family", "u_RiPPs_153"], ["NC_003155.5.region015", "butyrolactone.T1PKS.PKS-like", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000009765.2/' target='_blank'>GCF_000009765.2</a>", 1925, NaN, 61, "unknown_family", "u_Others_61"], ["NC_003155.5.region016", "T2PKS.T1PKS.PKS-like", "PKSother", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000009765.2/' target='_blank'>GCF_000009765.2</a>", 1926, NaN, 106, "unknown_family", "u_PKSother_106"], ["NC_003155.5.region017", "siderophore", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000009765.2/' target='_blank'>GCF_000009765.2</a>", 1927, NaN, 6, "unknown_family", "u_Others_6"], ["NC_003155.5.region018", "T2PKS.T1PKS", "PKSother", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000009765.2/' target='_blank'>GCF_000009765.2</a>", 204, NaN, 3, "known_family", "spore pigment;BE-24566B;BE-24566B;zunyimycin A;curamycin"], ["NC_003155.5.region019", "terpene", "Terpene", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000009765.2/' target='_blank'>GCF_000009765.2</a>", 1929, NaN, 37, "known_family", "pentalenolactone"], ["NC_003155.5.region020", "terpene", "Terpene", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000009765.2/' target='_blank'>GCF_000009765.2</a>", 1930, NaN, 165, "unknown_family", "u_Terpene_165"], ["NC_003155.5.region021", "NRPS.NRPS-like", "NRPS", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000009765.2/' target='_blank'>GCF_000009765.2</a>", 1931, NaN, 114, "unknown_family", "u_NRPS_114"], ["NC_003155.5.region022", "NRPS.NRPS-like", "NRPS", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000009765.2/' target='_blank'>GCF_000009765.2</a>", 1932, NaN, 132, "unknown_family", "u_NRPS_132"], ["NC_003155.5.region023", "butyrolactone.PKS-like", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000009765.2/' target='_blank'>GCF_000009765.2</a>", 1933, NaN, 53, "unknown_family", "u_Others_53"], ["NC_003155.5.region024", "arylpolyene.ladderane.NRPS", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000009765.2/' target='_blank'>GCF_000009765.2</a>", 1934, NaN, 55, "unknown_family", "u_Others_55"], ["NC_003155.5.region025", "terpene", "Terpene", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000009765.2/' target='_blank'>GCF_000009765.2</a>", 1935, NaN, 170, "unknown_family", "u_Terpene_170"], ["NC_003155.5.region026", "siderophore", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000009765.2/' target='_blank'>GCF_000009765.2</a>", 894, NaN, 1, "known_family", "desferrioxamin B;desferrioxamine E;desferrioxamine E;desferrioxamin B;desferrioxamine"], ["NC_003155.5.region027", "melanin", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000009765.2/' target='_blank'>GCF_000009765.2</a>", 864, NaN, 21, "known_family", "melanin"], ["NC_003155.5.region028", "lassopeptide", "RiPPs", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000009765.2/' target='_blank'>GCF_000009765.2</a>", 1938, NaN, 146, "unknown_family", "u_RiPPs_146"], ["NC_003155.5.region029", "ectoine", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000009765.2/' target='_blank'>GCF_000009765.2</a>", 2105, NaN, 2, "known_family", "ectoine"], ["NC_003155.5.region030", "NAPAA", "NRPS", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000009765.2/' target='_blank'>GCF_000009765.2</a>", 1940, NaN, 126, "unknown_family", "u_NRPS_126"], ["NC_003155.5.region031", "T3PKS", "PKSother", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000009765.2/' target='_blank'>GCF_000009765.2</a>", 1941, NaN, 113, "unknown_family", "u_PKSother_113"], ["NC_003155.5.region032", "T1PKS", "PKSI", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000009765.2/' target='_blank'>GCF_000009765.2</a>", 1942, 16.0, 47, "unknown_family", "u_PKSI_47"], ["NC_003155.5.region033", "siderophore", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000009765.2/' target='_blank'>GCF_000009765.2</a>", 1943, NaN, 65, "unknown_family", "u_Others_65"], ["NC_003155.5.region034", "hglE-KS.T1PKS", "PKSother", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000009765.2/' target='_blank'>GCF_000009765.2</a>", 1944, NaN, 108, "unknown_family", "u_PKSother_108"], ["NC_003155.5.region035", "lanthipeptide-class-iii.RiPP-like", "RiPPs", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000009765.2/' target='_blank'>GCF_000009765.2</a>", 1990, NaN, 16, "known_family", "informatipeptin"], ["NC_010572.1.region036", "terpene", "Terpene", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000010605.1/' target='_blank'>GCF_000010605.1</a>", 1981, NaN, 5, "known_family", "isorenieratene;carotenoid"], ["NC_010572.1.region001", "terpene", "Terpene", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000010605.1/' target='_blank'>GCF_000010605.1</a>", 1983, NaN, 5, "known_family", "isorenieratene;carotenoid"], ["NC_010572.1.region037", "butyrolactone", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000010605.1/' target='_blank'>GCF_000010605.1</a>", 804, NaN, 27, "known_family", "A-factor"], ["NC_010572.1.region002", "lanthipeptide-class-iv", "RiPPs", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000010605.1/' target='_blank'>GCF_000010605.1</a>", 1947, NaN, 144, "unknown_family", "u_RiPPs_144"], ["NC_010572.1.region038", "terpene", "Terpene", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000010605.1/' target='_blank'>GCF_000010605.1</a>", 1983, NaN, 5, "known_family", "isorenieratene;carotenoid"], ["NC_010572.1.region003", "NRPS.T1PKS", "PKS-NRP_Hybrids", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000010605.1/' target='_blank'>GCF_000010605.1</a>", 1948, NaN, 90, "unknown_family", "u_PKS-NRP_Hybrids_90"], ["NC_010572.1.region004", "T3PKS.NRPS", "PKS-NRP_Hybrids", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000010605.1/' target='_blank'>GCF_000010605.1</a>", 1949, NaN, 94, "unknown_family", "u_PKS-NRP_Hybrids_94"], ["NC_010572.1.region005", "melanin", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000010605.1/' target='_blank'>GCF_000010605.1</a>", 866, NaN, 28, "known_family", "melanin"], ["NC_010572.1.region006", "LAP.NRPS.T1PKS.NRPS-like", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000010605.1/' target='_blank'>GCF_000010605.1</a>", 1951, NaN, 70, "unknown_family", "u_Others_70"], ["NC_010572.1.region007", "RiPP-like", "RiPPs", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000010605.1/' target='_blank'>GCF_000010605.1</a>", 1952, NaN, 136, "unknown_family", "u_RiPPs_136"], ["NC_010572.1.region008", "NRPS.T1PKS", "PKS-NRP_Hybrids", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000010605.1/' target='_blank'>GCF_000010605.1</a>", 993, NaN, 31, "known_family", "SGR PTMs"], ["NC_010572.1.region009", "NRPS.NRPS-like", "NRPS", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000010605.1/' target='_blank'>GCF_000010605.1</a>", 1954, NaN, 128, "unknown_family", "u_NRPS_128"], ["NC_010572.1.region010", "terpene", "Terpene", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000010605.1/' target='_blank'>GCF_000010605.1</a>", 632, NaN, 4, "known_family", "hopene"], ["NC_010572.1.region011", "terpene", "Terpene", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000010605.1/' target='_blank'>GCF_000010605.1</a>", 627, NaN, 35, "known_family", "2-methylisoborneol"], ["NC_010572.1.region012", "RiPP-like", "RiPPs", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000010605.1/' target='_blank'>GCF_000010605.1</a>", 1957, NaN, 159, "unknown_family", "u_RiPPs_159"], ["NC_010572.1.region013", "linaridin", "RiPPs", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000010605.1/' target='_blank'>GCF_000010605.1</a>", 1958, NaN, 141, "unknown_family", "u_RiPPs_141"], ["NC_010572.1.region014", "siderophore", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000010605.1/' target='_blank'>GCF_000010605.1</a>", 1959, NaN, 57, "unknown_family", "u_Others_57"], ["NC_010572.1.region015", "terpene", "Terpene", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000010605.1/' target='_blank'>GCF_000010605.1</a>", 1960, NaN, 176, "unknown_family", "u_Terpene_176"], ["NC_010572.1.region016", "lanthipeptide-class-iii", "RiPPs", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000010605.1/' target='_blank'>GCF_000010605.1</a>", 1961, NaN, 33, "known_family", "AmfS"], ["NC_010572.1.region017", "melanin", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000010605.1/' target='_blank'>GCF_000010605.1</a>", 1962, NaN, 22, "known_family", "melanin"], ["NC_010572.1.region018", "T1PKS.NRPS-like", "PKS-NRP_Hybrids", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000010605.1/' target='_blank'>GCF_000010605.1</a>", 1963, NaN, 100, "unknown_family", "u_PKS-NRP_Hybrids_100"], ["NC_010572.1.region019", "NRPS", "NRPS", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000010605.1/' target='_blank'>GCF_000010605.1</a>", 1964, NaN, 125, "unknown_family", "u_NRPS_125"], ["NC_010572.1.region020", "arylpolyene.ladderane.NRPS.NRPS-like", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000010605.1/' target='_blank'>GCF_000010605.1</a>", 1965, NaN, 74, "unknown_family", "u_Others_74"], ["NC_010572.1.region021", "betalactone", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000010605.1/' target='_blank'>GCF_000010605.1</a>", 1966, NaN, 82, "unknown_family", "u_Others_82"], ["NC_010572.1.region022", "lanthipeptide-class-i", "RiPPs", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000010605.1/' target='_blank'>GCF_000010605.1</a>", 1967, NaN, 148, "unknown_family", "u_RiPPs_148"], ["NC_010572.1.region023", "melanin", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000010605.1/' target='_blank'>GCF_000010605.1</a>", 1968, NaN, 26, "known_family", "grixazone"], ["NC_010572.1.region024", "LAP.thiopeptide", "RiPPs", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000010605.1/' target='_blank'>GCF_000010605.1</a>", 1969, NaN, 156, "unknown_family", "u_RiPPs_156"], ["NC_010572.1.region025", "siderophore", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000010605.1/' target='_blank'>GCF_000010605.1</a>", 894, NaN, 1, "known_family", "desferrioxamin B;desferrioxamine E;desferrioxamine E;desferrioxamin B;desferrioxamine"], ["NC_010572.1.region026", "lanthipeptide-class-ii.lanthipeptide-class-iii", "RiPPs", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000010605.1/' target='_blank'>GCF_000010605.1</a>", 1971, NaN, 138, "unknown_family", "u_RiPPs_138"], ["NC_010572.1.region027", "PKS-like", "PKSother", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000010605.1/' target='_blank'>GCF_000010605.1</a>", 1972, NaN, 109, "unknown_family", "u_PKSother_109"], ["NC_010572.1.region028", "ectoine", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000010605.1/' target='_blank'>GCF_000010605.1</a>", 2105, NaN, 2, "known_family", "ectoine"], ["NC_010572.1.region029", "amglyccycl.RRE-containing", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000010605.1/' target='_blank'>GCF_000010605.1</a>", 1974, NaN, 63, "unknown_family", "u_Others_63"], ["NC_010572.1.region030", "T1PKS.terpene", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000010605.1/' target='_blank'>GCF_000010605.1</a>", 1975, NaN, 86, "unknown_family", "u_Others_86"], ["NC_010572.1.region031", "T1PKS", "PKSI", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000010605.1/' target='_blank'>GCF_000010605.1</a>", 1976, 16.0, 46, "unknown_family", "u_PKSI_46"], ["NC_010572.1.region032", "linaridin.T1PKS", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000010605.1/' target='_blank'>GCF_000010605.1</a>", 1977, NaN, 72, "unknown_family", "u_Others_72"], ["NC_010572.1.region033", "T3PKS", "PKSother", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000010605.1/' target='_blank'>GCF_000010605.1</a>", 1978, NaN, 112, "unknown_family", "u_PKSother_112"], ["NC_010572.1.region034", "NRPS", "NRPS", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000010605.1/' target='_blank'>GCF_000010605.1</a>", 350, NaN, 15, "known_family", "coelichelin;streptobactin"], ["NC_010572.1.region035", "T1PKS.PKS-like.transAT-PKS.NRPS.NRPS-like", "PKS-NRP_Hybrids", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000010605.1/' target='_blank'>GCF_000010605.1</a>", 1980, NaN, 97, "unknown_family", "u_PKS-NRP_Hybrids_97"], ["NC_013929.1.region001", "NRPS", "NRPS", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000091305.1/' target='_blank'>GCF_000091305.1</a>", 1984, NaN, 122, "unknown_family", "u_NRPS_122"], ["NC_013929.1.region002", "betalactone", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000091305.1/' target='_blank'>GCF_000091305.1</a>", 1985, NaN, 84, "unknown_family", "u_Others_84"], ["NC_013929.1.region003", "NRPS.NRPS-like", "NRPS", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000091305.1/' target='_blank'>GCF_000091305.1</a>", 1986, NaN, 127, "unknown_family", "u_NRPS_127"], ["NC_013929.1.region004", "lanthipeptide-class-iii", "RiPPs", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000091305.1/' target='_blank'>GCF_000091305.1</a>", 1987, NaN, 147, "unknown_family", "u_RiPPs_147"], ["NC_013929.1.region005", "terpene", "Terpene", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000091305.1/' target='_blank'>GCF_000091305.1</a>", 1988, NaN, 164, "unknown_family", "u_Terpene_164"], ["NC_013929.1.region006", "terpene", "Terpene", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000091305.1/' target='_blank'>GCF_000091305.1</a>", 1358, NaN, 17, "known_family", "isorenieratene;isorenieratene"], ["NC_013929.1.region007", "RiPP-like.lanthipeptide-class-iii", "RiPPs", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000091305.1/' target='_blank'>GCF_000091305.1</a>", 1990, NaN, 16, "known_family", "informatipeptin"], ["NC_013929.1.region008", "butyrolactone", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000091305.1/' target='_blank'>GCF_000091305.1</a>", 1991, NaN, 64, "unknown_family", "u_Others_64"], ["NC_013929.1.region009", "terpene", "Terpene", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000091305.1/' target='_blank'>GCF_000091305.1</a>", 632, NaN, 4, "known_family", "hopene"], ["NC_013929.1.region010", "siderophore", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000091305.1/' target='_blank'>GCF_000091305.1</a>", 1921, NaN, 29, "unknown_family", "u_Others_29"], ["NC_013929.1.region011", "NAPAA", "NRPS", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000091305.1/' target='_blank'>GCF_000091305.1</a>", 1994, NaN, 131, "unknown_family", "u_NRPS_131"], ["NC_013929.1.region012", "terpene", "Terpene", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000091305.1/' target='_blank'>GCF_000091305.1</a>", 1995, NaN, 167, "unknown_family", "u_Terpene_167"], ["NC_013929.1.region013", "RiPP-like", "RiPPs", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000091305.1/' target='_blank'>GCF_000091305.1</a>", 1996, NaN, 135, "unknown_family", "u_RiPPs_135"], ["NC_013929.1.region014", "terpene", "Terpene", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000091305.1/' target='_blank'>GCF_000091305.1</a>", 1997, NaN, 175, "unknown_family", "u_Terpene_175"], ["NC_013929.1.region015", "siderophore", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000091305.1/' target='_blank'>GCF_000091305.1</a>", 1927, NaN, 6, "unknown_family", "u_Others_6"], ["NC_013929.1.region016", "NRPS.lanthipeptide-class-i", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000091305.1/' target='_blank'>GCF_000091305.1</a>", 1999, NaN, 60, "unknown_family", "u_Others_60"], ["NC_013929.1.region017", "T2PKS", "PKSother", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000091305.1/' target='_blank'>GCF_000091305.1</a>", 259, NaN, 8, "known_family", "anthrabenzoxocinone;spore pigment"], ["NC_013929.1.region018", "NRPS.T1PKS", "PKS-NRP_Hybrids", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000091305.1/' target='_blank'>GCF_000091305.1</a>", 2001, NaN, 105, "unknown_family", "u_PKS-NRP_Hybrids_105"], ["NC_013929.1.region019", "lanthipeptide-class-iii", "RiPPs", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000091305.1/' target='_blank'>GCF_000091305.1</a>", 2002, NaN, 151, "unknown_family", "u_RiPPs_151"], ["NC_013929.1.region020", "bottromycin.RiPP-like", "RiPPs", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000091305.1/' target='_blank'>GCF_000091305.1</a>", 447, NaN, 9, "known_family", "bottromycin A2;bottromycin A2;bottromycin A2"], ["NC_013929.1.region021", "siderophore", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000091305.1/' target='_blank'>GCF_000091305.1</a>", 894, NaN, 1, "known_family", "desferrioxamin B;desferrioxamine E;desferrioxamine E;desferrioxamin B;desferrioxamine"], ["NC_013929.1.region022", "melanin", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000091305.1/' target='_blank'>GCF_000091305.1</a>", 2005, NaN, 75, "unknown_family", "u_Others_75"], ["NC_013929.1.region023", "butyrolactone.LAP.T1PKS.PKS-like", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000091305.1/' target='_blank'>GCF_000091305.1</a>", 2006, NaN, 50, "unknown_family", "u_Others_50"], ["NC_013929.1.region024", "ectoine", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000091305.1/' target='_blank'>GCF_000091305.1</a>", 2105, NaN, 2, "known_family", "ectoine"], ["NC_013929.1.region025", "NAPAA", "NRPS", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000091305.1/' target='_blank'>GCF_000091305.1</a>", 2008, NaN, 123, "unknown_family", "u_NRPS_123"], ["NC_013929.1.region026", "terpene", "Terpene", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000091305.1/' target='_blank'>GCF_000091305.1</a>", 2009, NaN, 171, "unknown_family", "u_Terpene_171"], ["NC_013929.1.region027", "indole.T1PKS", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000091305.1/' target='_blank'>GCF_000091305.1</a>", 2010, NaN, 87, "unknown_family", "u_Others_87"], ["NC_013929.1.region028", "T1PKS", "PKSI", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000091305.1/' target='_blank'>GCF_000091305.1</a>", 2011, 16.0, 42, "unknown_family", "u_PKSI_42"], ["NC_013929.1.region029", "T3PKS", "PKSother", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000091305.1/' target='_blank'>GCF_000091305.1</a>", 2012, NaN, 107, "unknown_family", "u_PKSother_107"], ["NC_013929.1.region030", "terpene", "Terpene", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000091305.1/' target='_blank'>GCF_000091305.1</a>", 2013, NaN, 177, "unknown_family", "u_Terpene_177"], ["NC_013929.1.region031", "linaridin.T1PKS", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000091305.1/' target='_blank'>GCF_000091305.1</a>", 2014, NaN, 56, "unknown_family", "u_Others_56"], ["NC_013929.1.region032", "siderophore", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000091305.1/' target='_blank'>GCF_000091305.1</a>", 2015, NaN, 79, "unknown_family", "u_Others_79"], ["NC_013929.1.region033", "melanin.NRPS", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000091305.1/' target='_blank'>GCF_000091305.1</a>", 2016, NaN, 59, "unknown_family", "u_Others_59"], ["NC_013929.1.region034", "terpene", "Terpene", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000091305.1/' target='_blank'>GCF_000091305.1</a>", 2017, NaN, 162, "unknown_family", "u_Terpene_162"], ["NC_016582.1.region036", "lanthipeptide-class-i", "RiPPs", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000092385.1/' target='_blank'>GCF_000092385.1</a>", 2101, NaN, 160, "unknown_family", "u_RiPPs_160"], ["NC_016582.1.region001", "NRPS.T1PKS.NRPS-like", "PKS-NRP_Hybrids", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000092385.1/' target='_blank'>GCF_000092385.1</a>", 2066, NaN, 93, "unknown_family", "u_PKS-NRP_Hybrids_93"], ["NC_016582.1.region037", "lanthipeptide-class-ii", "RiPPs", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000092385.1/' target='_blank'>GCF_000092385.1</a>", 1163, NaN, 34, "known_family", "SBI-06990 A1;SBI-06989 A2"], ["NC_016582.1.region002", "RiPP-like", "RiPPs", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000092385.1/' target='_blank'>GCF_000092385.1</a>", 2067, NaN, 134, "unknown_family", "u_RiPPs_134"], ["NC_016582.1.region038", "lanthipeptide-class-iii", "RiPPs", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000092385.1/' target='_blank'>GCF_000092385.1</a>", 2103, NaN, 143, "unknown_family", "u_RiPPs_143"], ["NC_016582.1.region003", "terpene", "Terpene", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000092385.1/' target='_blank'>GCF_000092385.1</a>", 2068, NaN, 169, "unknown_family", "u_Terpene_169"], ["NC_016582.1.region039", "PKS-like", "PKSother", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000092385.1/' target='_blank'>GCF_000092385.1</a>", 2104, NaN, 110, "unknown_family", "u_PKSother_110"], ["NC_016582.1.region004", "transAT-PKS.NRPS.hglE-KS.PKS-like", "PKS-NRP_Hybrids", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000092385.1/' target='_blank'>GCF_000092385.1</a>", 2069, NaN, 99, "unknown_family", "u_PKS-NRP_Hybrids_99"], ["NC_016582.1.region040", "ectoine", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000092385.1/' target='_blank'>GCF_000092385.1</a>", 2105, NaN, 2, "known_family", "ectoine"], ["NC_016582.1.region005", "T1PKS.RiPP-like", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000092385.1/' target='_blank'>GCF_000092385.1</a>", 2070, NaN, 80, "unknown_family", "u_Others_80"], ["NC_016582.1.region042", "T1PKS", "PKSI", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000092385.1/' target='_blank'>GCF_000092385.1</a>", 2107, 16.0, 18, "known_family", "nanchangmycin"], ["NC_016582.1.region006", "transAT-PKS.NRPS.T1PKS", "PKS-NRP_Hybrids", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000092385.1/' target='_blank'>GCF_000092385.1</a>", 2071, NaN, 104, "unknown_family", "u_PKS-NRP_Hybrids_104"], ["NC_016582.1.region041", "siderophore", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000092385.1/' target='_blank'>GCF_000092385.1</a>", 2106, NaN, 51, "unknown_family", "u_Others_51"], ["NC_016582.1.region007", "T1PKS", "PKSI", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000092385.1/' target='_blank'>GCF_000092385.1</a>", 2072, 2073.0, 13, "known_family", "meilingmycin"], ["NC_016582.1.region043", "butyrolactone", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000092385.1/' target='_blank'>GCF_000092385.1</a>", 2032, NaN, 30, "unknown_family", "u_Others_30"], ["NC_016582.1.region008", "T1PKS", "PKSI", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000092385.1/' target='_blank'>GCF_000092385.1</a>", 2073, 2073.0, 13, "known_family", "meilingmycin"], ["NC_016582.1.region044", "terpene", "Terpene", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000092385.1/' target='_blank'>GCF_000092385.1</a>", 2109, NaN, 168, "unknown_family", "u_Terpene_168"], ["NC_016582.1.region009", "NRPS", "NRPS", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000092385.1/' target='_blank'>GCF_000092385.1</a>", 2074, NaN, 120, "unknown_family", "u_NRPS_120"], ["NC_016582.1.region045", "ranthipeptide.NRPS-like", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000092385.1/' target='_blank'>GCF_000092385.1</a>", 2110, NaN, 68, "unknown_family", "u_Others_68"], ["NC_016582.1.region010", "furan.NRPS.hglE-KS.T1PKS", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000092385.1/' target='_blank'>GCF_000092385.1</a>", 2075, NaN, 76, "unknown_family", "u_Others_76"], ["NC_016582.1.region046", "lanthipeptide-class-ii", "RiPPs", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000092385.1/' target='_blank'>GCF_000092385.1</a>", 2111, NaN, 149, "unknown_family", "u_RiPPs_149"], ["NC_016582.1.region011", "terpene", "Terpene", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000092385.1/' target='_blank'>GCF_000092385.1</a>", 2076, NaN, 161, "unknown_family", "u_Terpene_161"], ["NC_016582.1.region012", "NAPAA.NRPS-like", "NRPS", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000092385.1/' target='_blank'>GCF_000092385.1</a>", 2077, NaN, 115, "unknown_family", "u_NRPS_115"], ["NC_016582.1.region013", "NRPS.T1PKS", "PKS-NRP_Hybrids", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000092385.1/' target='_blank'>GCF_000092385.1</a>", 2078, NaN, 98, "unknown_family", "u_PKS-NRP_Hybrids_98"], ["NC_016582.1.region014", "T1PKS.PKS-like", "PKSother", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000092385.1/' target='_blank'>GCF_000092385.1</a>", 2079, NaN, 111, "unknown_family", "u_PKSother_111"], ["NC_016582.1.region015", "terpene", "Terpene", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000092385.1/' target='_blank'>GCF_000092385.1</a>", 2080, NaN, 180, "unknown_family", "u_Terpene_180"], ["NC_016582.1.region016", "nucleoside", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000092385.1/' target='_blank'>GCF_000092385.1</a>", 2081, NaN, 77, "unknown_family", "u_Others_77"], ["NC_016582.1.region017", "NRPS-like", "NRPS", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000092385.1/' target='_blank'>GCF_000092385.1</a>", 2082, NaN, 118, "unknown_family", "u_NRPS_118"], ["NC_016582.1.region018", "T1PKS", "PKSI", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000092385.1/' target='_blank'>GCF_000092385.1</a>", 2083, 16.0, 48, "unknown_family", "u_PKSI_48"], ["NC_016582.1.region019", "terpene", "Terpene", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000092385.1/' target='_blank'>GCF_000092385.1</a>", 2084, NaN, 173, "unknown_family", "u_Terpene_173"], ["NC_016582.1.region020", "redox-cofactor", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000092385.1/' target='_blank'>GCF_000092385.1</a>", 2034, NaN, 23, "unknown_family", "u_Others_23"], ["NC_016582.1.region021", "NRPS.T1PKS", "PKS-NRP_Hybrids", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000092385.1/' target='_blank'>GCF_000092385.1</a>", 2086, NaN, 92, "unknown_family", "u_PKS-NRP_Hybrids_92"], ["NC_016582.1.region022", "thioamitides.LAP.thiopeptide", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000092385.1/' target='_blank'>GCF_000092385.1</a>", 2087, NaN, 66, "unknown_family", "u_Others_66"], ["NC_016582.1.region023", "terpene", "Terpene", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000092385.1/' target='_blank'>GCF_000092385.1</a>", 632, NaN, 4, "known_family", "hopene"], ["NC_016582.1.region024", "lassopeptide", "RiPPs", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000092385.1/' target='_blank'>GCF_000092385.1</a>", 2089, NaN, 152, "unknown_family", "u_RiPPs_152"], ["NC_016582.1.region025", "T2PKS", "PKSother", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000092385.1/' target='_blank'>GCF_000092385.1</a>", 259, NaN, 8, "known_family", "anthrabenzoxocinone;spore pigment"], ["NC_016582.1.region026", "NRPS", "NRPS", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000092385.1/' target='_blank'>GCF_000092385.1</a>", 2091, NaN, 117, "unknown_family", "u_NRPS_117"], ["NC_016582.1.region027", "RiPP-like", "RiPPs", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000092385.1/' target='_blank'>GCF_000092385.1</a>", 2092, NaN, 158, "unknown_family", "u_RiPPs_158"], ["NC_016582.1.region028", "T1PKS.NRPS-like", "PKS-NRP_Hybrids", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000092385.1/' target='_blank'>GCF_000092385.1</a>", 2093, NaN, 102, "unknown_family", "u_PKS-NRP_Hybrids_102"], ["NC_016582.1.region029", "siderophore", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000092385.1/' target='_blank'>GCF_000092385.1</a>", 1927, NaN, 6, "unknown_family", "u_Others_6"], ["NC_016582.1.region030", "NRPS-like", "NRPS", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000092385.1/' target='_blank'>GCF_000092385.1</a>", 2095, NaN, 14, "known_family", "echoside A;echoside B;echoside C;echoside D;echoside E"], ["NC_016582.1.region031", "thioamitides", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000092385.1/' target='_blank'>GCF_000092385.1</a>", 2096, NaN, 88, "unknown_family", "u_Others_88"], ["NC_016582.1.region032", "NRPS.T1PKS.NRPS-like", "PKS-NRP_Hybrids", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000092385.1/' target='_blank'>GCF_000092385.1</a>", 2097, NaN, 95, "unknown_family", "u_PKS-NRP_Hybrids_95"], ["NC_016582.1.region033", "NRPS.siderophore.NRPS-like", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000092385.1/' target='_blank'>GCF_000092385.1</a>", 894, NaN, 1, "known_family", "desferrioxamin B;desferrioxamine E;desferrioxamine E;desferrioxamin B;desferrioxamine"], ["NC_016582.1.region034", "arylpolyene.ladderane", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000092385.1/' target='_blank'>GCF_000092385.1</a>", 2099, NaN, 62, "unknown_family", "u_Others_62"], ["NC_016582.1.region035", "RRE-containing.oligosaccharide.T2PKS.PKS-like.NRPS", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000092385.1/' target='_blank'>GCF_000092385.1</a>", 2100, NaN, 54, "unknown_family", "u_Others_54"], ["NC_016582.1.region047", "T1PKS", "PKSI", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000092385.1/' target='_blank'>GCF_000092385.1</a>", 2112, 16.0, 45, "unknown_family", "u_PKSI_45"], ["NC_016582.1.region048", "NRPS.PKS-like", "PKS-NRP_Hybrids", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000092385.1/' target='_blank'>GCF_000092385.1</a>", 2113, NaN, 91, "unknown_family", "u_PKS-NRP_Hybrids_91"], ["NC_016582.1.region049", "NRPS-like", "NRPS", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000092385.1/' target='_blank'>GCF_000092385.1</a>", 2114, NaN, 124, "unknown_family", "u_NRPS_124"], ["NC_016582.1.region050", "transAT-PKS.NRPS.terpene", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000092385.1/' target='_blank'>GCF_000092385.1</a>", 2115, NaN, 85, "unknown_family", "u_Others_85"], ["NC_016582.1.region051", "T1PKS", "PKSI", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000092385.1/' target='_blank'>GCF_000092385.1</a>", 2116, 16.0, 41, "unknown_family", "u_PKSI_41"], ["NC_015957.1.region033", "NAPAA.hglE-KS.T1PKS", "PKS-NRP_Hybrids", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000147815.2/' target='_blank'>GCF_000147815.2</a>", 2053, NaN, 101, "unknown_family", "u_PKS-NRP_Hybrids_101"], ["NC_015951.1.region001", "NRPS.betalactone", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000147815.2/' target='_blank'>GCF_000147815.2</a>", 2018, NaN, 81, "unknown_family", "u_Others_81"], ["NC_015957.1.region034", "T1PKS", "PKSI", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000147815.2/' target='_blank'>GCF_000147815.2</a>", 2054, 16.0, 38, "unknown_family", "u_PKSI_38"], ["NC_015951.1.region002", "lassopeptide", "RiPPs", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000147815.2/' target='_blank'>GCF_000147815.2</a>", 2019, NaN, 145, "unknown_family", "u_RiPPs_145"], ["NC_015957.1.region035", "siderophore.T1PKS", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000147815.2/' target='_blank'>GCF_000147815.2</a>", 2055, NaN, 49, "unknown_family", "u_Others_49"], ["NC_015952.1.region001", "butyrolactone", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000147815.2/' target='_blank'>GCF_000147815.2</a>", 2020, NaN, 52, "unknown_family", "u_Others_52"], ["NC_015957.1.region036", "ectoine", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000147815.2/' target='_blank'>GCF_000147815.2</a>", 2105, NaN, 2, "known_family", "ectoine"], ["NC_015957.1.region001", "siderophore", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000147815.2/' target='_blank'>GCF_000147815.2</a>", 894, NaN, 1, "known_family", "desferrioxamin B;desferrioxamine E;desferrioxamine E;desferrioxamin B;desferrioxamine"], ["NC_015957.1.region037", "terpene", "Terpene", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000147815.2/' target='_blank'>GCF_000147815.2</a>", 2057, NaN, 181, "unknown_family", "u_Terpene_181"], ["NC_015957.1.region002", "lanthipeptide-class-i", "RiPPs", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000147815.2/' target='_blank'>GCF_000147815.2</a>", 2022, NaN, 154, "unknown_family", "u_RiPPs_154"], ["NC_015957.1.region039", "T1PKS", "PKSI", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000147815.2/' target='_blank'>GCF_000147815.2</a>", 1805, 16.0, 11, "known_family", "mediomycin A;mediomiycin A"], ["NC_015957.1.region003", "NRPS-like", "NRPS", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000147815.2/' target='_blank'>GCF_000147815.2</a>", 2095, NaN, 14, "known_family", "echoside A;echoside B;echoside C;echoside D;echoside E"], ["NC_015957.1.region038", "lanthipeptide-class-ii", "RiPPs", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000147815.2/' target='_blank'>GCF_000147815.2</a>", 2058, NaN, 140, "unknown_family", "u_RiPPs_140"], ["NC_015957.1.region004", "siderophore", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000147815.2/' target='_blank'>GCF_000147815.2</a>", 1927, NaN, 6, "unknown_family", "u_Others_6"], ["NC_015957.1.region040", "RRE-containing", "RiPPs", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000147815.2/' target='_blank'>GCF_000147815.2</a>", 2060, NaN, 157, "unknown_family", "u_RiPPs_157"], ["NC_015957.1.region005", "RiPP-like", "RiPPs", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000147815.2/' target='_blank'>GCF_000147815.2</a>", 2025, NaN, 137, "unknown_family", "u_RiPPs_137"], ["NC_015957.1.region041", "ladderane", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000147815.2/' target='_blank'>GCF_000147815.2</a>", 2061, NaN, 83, "unknown_family", "u_Others_83"], ["NC_015957.1.region006", "T2PKS", "PKSother", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000147815.2/' target='_blank'>GCF_000147815.2</a>", 204, NaN, 3, "known_family", "spore pigment;BE-24566B;BE-24566B;zunyimycin A;curamycin"], ["NC_015957.1.region042", "NRPS", "NRPS", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000147815.2/' target='_blank'>GCF_000147815.2</a>", 2062, NaN, 121, "unknown_family", "u_NRPS_121"], ["NC_015957.1.region007", "terpene", "Terpene", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000147815.2/' target='_blank'>GCF_000147815.2</a>", 632, NaN, 4, "known_family", "hopene"], ["NC_015957.1.region043", "indole", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000147815.2/' target='_blank'>GCF_000147815.2</a>", 1382, NaN, 24, "known_family", "5-isoprenylindole-3-carboxylate \u03b2-D-glycosyl ester"], ["NC_015957.1.region008", "lanthipeptide-class-i", "RiPPs", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000147815.2/' target='_blank'>GCF_000147815.2</a>", 2028, NaN, 139, "unknown_family", "u_RiPPs_139"], ["NC_015957.1.region009", "NRPS", "NRPS", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000147815.2/' target='_blank'>GCF_000147815.2</a>", 2029, NaN, 133, "unknown_family", "u_NRPS_133"], ["NC_015957.1.region010", "lassopeptide", "RiPPs", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000147815.2/' target='_blank'>GCF_000147815.2</a>", 2030, NaN, 142, "unknown_family", "u_RiPPs_142"], ["NC_015957.1.region011", "T1PKS", "PKSI", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000147815.2/' target='_blank'>GCF_000147815.2</a>", 2031, 16.0, 44, "unknown_family", "u_PKSI_44"], ["NC_015957.1.region012", "butyrolactone", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000147815.2/' target='_blank'>GCF_000147815.2</a>", 2032, NaN, 30, "unknown_family", "u_Others_30"], ["NC_015957.1.region013", "hserlactone", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000147815.2/' target='_blank'>GCF_000147815.2</a>", 2033, NaN, 69, "unknown_family", "u_Others_69"], ["NC_015957.1.region014", "redox-cofactor", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000147815.2/' target='_blank'>GCF_000147815.2</a>", 2034, NaN, 23, "unknown_family", "u_Others_23"], ["NC_015957.1.region015", "T1PKS", "PKSI", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000147815.2/' target='_blank'>GCF_000147815.2</a>", 50, 16.0, 19, "known_family", "elaiophylin"], ["NC_015957.1.region016", "T1PKS", "PKSI", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000147815.2/' target='_blank'>GCF_000147815.2</a>", 2036, 16.0, 43, "unknown_family", "u_PKSI_43"], ["NC_015957.1.region017", "T1PKS", "PKSI", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000147815.2/' target='_blank'>GCF_000147815.2</a>", 108, 16.0, 20, "known_family", "nigericin"], ["NC_015957.1.region018", "T1PKS", "PKSI", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000147815.2/' target='_blank'>GCF_000147815.2</a>", 2038, 16.0, 12, "known_family", "azalomycin F3a;niphimycins C-E"], ["NC_015957.1.region019", "betalactone", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000147815.2/' target='_blank'>GCF_000147815.2</a>", 2039, NaN, 67, "unknown_family", "u_Others_67"], ["NC_015957.1.region020", "NRPS.T1PKS.NRPS-like", "PKS-NRP_Hybrids", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000147815.2/' target='_blank'>GCF_000147815.2</a>", 2040, NaN, 96, "unknown_family", "u_PKS-NRP_Hybrids_96"], ["NC_015957.1.region021", "NRPS.T1PKS", "PKS-NRP_Hybrids", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000147815.2/' target='_blank'>GCF_000147815.2</a>", 2041, NaN, 89, "unknown_family", "u_PKS-NRP_Hybrids_89"], ["NC_015957.1.region022", "NRPS-like", "NRPS", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000147815.2/' target='_blank'>GCF_000147815.2</a>", 2042, NaN, 130, "unknown_family", "u_NRPS_130"], ["NC_015957.1.region023", "terpene.PKS-like", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000147815.2/' target='_blank'>GCF_000147815.2</a>", 2043, NaN, 58, "unknown_family", "u_Others_58"], ["NC_015957.1.region024", "terpene", "Terpene", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000147815.2/' target='_blank'>GCF_000147815.2</a>", 2044, NaN, 163, "unknown_family", "u_Terpene_163"], ["NC_015957.1.region025", "NRPS", "NRPS", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000147815.2/' target='_blank'>GCF_000147815.2</a>", 2045, NaN, 116, "unknown_family", "u_NRPS_116"], ["NC_015957.1.region026", "hglE-KS.T1PKS.RiPP-like", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000147815.2/' target='_blank'>GCF_000147815.2</a>", 2046, NaN, 71, "unknown_family", "u_Others_71"], ["NC_015957.1.region027", "NRPS-like", "NRPS", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000147815.2/' target='_blank'>GCF_000147815.2</a>", 2047, NaN, 129, "unknown_family", "u_NRPS_129"], ["NC_015957.1.region028", "T1PKS.NRPS-like", "PKS-NRP_Hybrids", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000147815.2/' target='_blank'>GCF_000147815.2</a>", 2048, NaN, 32, "known_family", "hygrocin A;hygrocin B"], ["NC_015957.1.region029", "NRPS.T1PKS.lanthipeptide-class-i", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000147815.2/' target='_blank'>GCF_000147815.2</a>", 2049, NaN, 78, "unknown_family", "u_Others_78"], ["NC_015957.1.region030", "terpene", "Terpene", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000147815.2/' target='_blank'>GCF_000147815.2</a>", 2050, NaN, 174, "unknown_family", "u_Terpene_174"], ["NC_015957.1.region031", "terpene", "Terpene", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000147815.2/' target='_blank'>GCF_000147815.2</a>", 2051, NaN, 166, "unknown_family", "u_Terpene_166"], ["NC_015957.1.region032", "T1PKS.NRPS-like", "PKS-NRP_Hybrids", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000147815.2/' target='_blank'>GCF_000147815.2</a>", 63, NaN, 7, "known_family", "herbimycin A;geldanamycin;geldanamycin"], ["NC_015957.1.region044", "arylpolyene.ladderane.NRPS", "Others", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000147815.2/' target='_blank'>GCF_000147815.2</a>", 2064, NaN, 73, "unknown_family", "u_Others_73"], ["NC_015957.1.region045", "terpene", "Terpene", "<a href='http://localhost:http://localhost:8002/antismash/6.1.1/GCF_000147815.2/' target='_blank'>GCF_000147815.2</a>", 2065, NaN, 179, "unknown_family", "u_Terpene_179"]];
+
+    // Define the dt_args
+    let dt_args = {"scrollX": "200px", "columnDefs": [{"width": "80%", "targets": "_all"}, {"className": "dt-center", "targets": "_all"}], "lengthMenu": [5, 10, 20, 50, 100, 200, 500], "order": []};
+    dt_args["data"] = data;
+
+    $(document).ready(function () {
+
+        $('#9b3caf06-1fd3-4b24-b4b2-afbbc5b9efc1').DataTable(dt_args);
+    });
+</script>
+
+<h2 id="references">References</h2>
+<ul>
+<li><em>Navarro-Muñoz, J.C., Selem-Mojica, N., Mullowney, M.W. et al. A computational framework to explore large-scale biosynthetic diversity. Nat Chem Biol 16, 60–68 (2020). https://doi.org/10.1038/s41589-019-0400-9</em></li>
+</ul>
+
+
+
+
+
+                
+
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../antismash/" class="md-footer__link md-footer__link--prev" aria-label="Previous: antismash" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              antismash
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../bigslice/" class="md-footer__link md-footer__link--next" aria-label="Next: bigslice" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              bigslice
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/NPGMgroup" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://github.com/NBChub/bgcflow" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "toc.integrate"], "search": "../assets/javascripts/workers/search.5bf1dace.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.078830c0.min.js"></script>
+      
+    
+  </body>
+</html>
