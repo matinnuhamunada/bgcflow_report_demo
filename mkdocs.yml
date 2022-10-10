@@ -1,0 +1,44 @@
+extra:
+  social:
+  - icon: fontawesome/brands/twitter
+    link: https://twitter.com/NPGMgroup
+  - icon: fontawesome/brands/github
+    link: https://github.com/NBChub/bgcflow
+markdown_extensions:
+- attr_list
+nav:
+- Home: index.md
+- seqfu: seqfu.md
+- mash: mash.md
+- fastani: fastani.md
+- antismash: antismash.md
+- bigscape: bigscape.md
+- bigslice: bigslice.md
+- automlst-wrapper: automlst-wrapper.md
+plugins:
+- search
+- mkdocs-jupyter:
+    execute: false
+    include_source: true
+    no_input: true
+    show_input: false
+- macros
+site_name: BGCFlow Report
+theme:
+  custom_dir: overrides
+  features:
+  - navigation.tabs
+  - toc.integrate
+  logo: assets/bgcflow/BGCFlow_logo.svg
+  name: material
+  palette:
+  - primary: blue
+    scheme: default
+    toggle:
+      icon: material/toggle-switch
+      name: Switch to dark mode
+  - primary: blue
+    scheme: slate
+    toggle:
+      icon: material/toggle-switch-off-outline
+      name: Switch to light mode
