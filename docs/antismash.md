@@ -1,17 +1,26 @@
-# AntiSMASH Report
-Summary of AntiSMASH results from: `[{{ project().name }}]`
+# antiSMASH 
+Summary of antiSMASH results for: `[{{ project().name }}]`
+
+## Description
+> antiSMASH allows the rapid genome-wide identification, annotation and analysis of secondary metabolite biosynthesis gene clusters in bacterial and fungal genomes. It integrates and cross-links with a large number of in silico secondary metabolite analysis tools that have been [published earlier](https://pubmed.ncbi.nlm.nih.gov/?term=16221976%2C19297688%2C17506888%2C17400247%2C12691745%2C19360130%2C17913739%2C20462861%2C18950525%2C15980457%2C18978015%5Buid%5D).
+
+## Result Summary
+
+
+AntiSMASH detected 206 BGCs from 5 genomes with the median of 38. Out of these, 99.51% are deemed as complete.
 
 
 
 
 
-<div id="altair-viz-4ad2bc9fd1da40b28aaafac8366c535e"></div>
+
+<div id="altair-viz-2868c0d54f4a4a288cc04fda823806e3"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-4ad2bc9fd1da40b28aaafac8366c535e") {
-      outputDiv = document.getElementById("altair-viz-4ad2bc9fd1da40b28aaafac8366c535e");
+    if (outputDiv.id !== "altair-viz-2868c0d54f4a4a288cc04fda823806e3") {
+      outputDiv = document.getElementById("altair-viz-2868c0d54f4a4a288cc04fda823806e3");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -63,9 +72,12 @@ Summary of AntiSMASH results from: `[{{ project().name }}]`
 
 
 ## Summary Table
+Click on the genome ids to get the antiSMASH result.
+
+[Download Table]({{ project().file_server() }}/tables/df_antismash_6.1.1_summary.csv){:target="_blank" .md-button}
 
 
-<table id="b72e624d-68e6-4a72-8173-ca8cd512f09c" class="display compact"style="max-width:100%"><thead>
+<table id="508a2d56-586b-4537-a1de-a3dbb993338f" class="display compact"style="max-width:100%"><thead>
     <tr style="text-align: right;">
 
       <th>genome_id</th>
@@ -108,7 +120,7 @@ tfoot input {
     dt($);
 
     // Define the table data
-    const data = [["<a href='{{ project().file_server() }}/antismash/6.1.1/GCF_000009765.2/index.html?view' target='_blank''>GCF_000009765.2</a>", "ncbi", "s__Streptomyces avermitilis", NaN, 35.0, 0.0], ["<a href='{{ project().file_server() }}/antismash/6.1.1/GCF_000010605.1/' target='_blank''>GCF_000010605.1</a>", "ncbi", "s__Streptomyces griseus", NaN, 38.0, 0.0], ["<a href='{{ project().file_server() }}/antismash/6.1.1/GCF_000091305.1/' target='_blank''>GCF_000091305.1</a>", "ncbi", "s__Streptomyces scabiei", NaN, 34.0, 0.0], ["<a href='{{ project().file_server() }}/antismash/6.1.1/GCF_000092385.1/' target='_blank''>GCF_000092385.1</a>", "ncbi", "s__Streptomyces milbemycinicus", NaN, 51.0, 1.0], ["<a href='{{ project().file_server() }}/antismash/6.1.1/GCF_000147815.2/' target='_blank''>GCF_000147815.2</a>", "ncbi", "s__Streptomyces violaceusniger_A", NaN, 48.0, 0.0]];
+    const data = [["<a href='{{ project().file_server() }}/antismash/6.1.1/GCF_000009765.2/index.html?view' target='_blank''>GCF_000009765.2</a>", "ncbi", "s__Streptomyces avermitilis", NaN, 35.0, 0.0], ["<a href='{{ project().file_server() }}/antismash/6.1.1/GCF_000010605.1/index.html?view' target='_blank''>GCF_000010605.1</a>", "ncbi", "s__Streptomyces griseus", NaN, 38.0, 0.0], ["<a href='{{ project().file_server() }}/antismash/6.1.1/GCF_000091305.1/index.html?view' target='_blank''>GCF_000091305.1</a>", "ncbi", "s__Streptomyces scabiei", NaN, 34.0, 0.0], ["<a href='{{ project().file_server() }}/antismash/6.1.1/GCF_000092385.1/index.html?view' target='_blank''>GCF_000092385.1</a>", "ncbi", "s__Streptomyces milbemycinicus", NaN, 51.0, 1.0], ["<a href='{{ project().file_server() }}/antismash/6.1.1/GCF_000147815.2/index.html?view' target='_blank''>GCF_000147815.2</a>", "ncbi", "s__Streptomyces violaceusniger_A", NaN, 48.0, 0.0]];
 
     // Define the dt_args
     let dt_args = {"columnDefs": [{"className": "dt-center", "targets": "_all"}], "lengthMenu": [5, 10, 20, 50, 100, 200, 500], "paging": false, "order": []};
@@ -116,13 +128,15 @@ tfoot input {
 
     $(document).ready(function () {
 
-        $('#b72e624d-68e6-4a72-8173-ca8cd512f09c').DataTable(dt_args);
+        $('#508a2d56-586b-4537-a1de-a3dbb993338f').DataTable(dt_args);
     });
 </script>
 
 
 
 ## References
+<font size="2">
 {% for i in project().rule_used['antismash']['references'] %}
 - {{ i }} 
 {% endfor %}
+</font>

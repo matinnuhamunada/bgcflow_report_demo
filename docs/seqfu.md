@@ -1,20 +1,22 @@
-# SeqFu
-Summary of [Seqfu](https://github.com/telatin/seqfu2) results from project: [{{ project().name }}] 
+# SeqFu2
+Summary of [Seqfu](https://github.com/telatin/seqfu2) results from project: `[{{ project().name }}]` 
 
-## QC Statistics
-[Seqfu](https://github.com/telatin/seqfu2) provides a sequence statistic overview of the genomes in the dataset.
+## Description
+[Seqfu2](https://github.com/telatin/seqfu2) provides a sequence statistic overview of the genomes in the dataset.
+
+## Genome Statistics Overview
 
 
 
 
 
-<div id="altair-viz-4a1a113235d8493aa3fd6ed99f7172c0"></div>
+<div id="altair-viz-7cde8ab685c1450da830091babf98a00"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-4a1a113235d8493aa3fd6ed99f7172c0") {
-      outputDiv = document.getElementById("altair-viz-4a1a113235d8493aa3fd6ed99f7172c0");
+    if (outputDiv.id !== "altair-viz-7cde8ab685c1450da830091babf98a00") {
+      outputDiv = document.getElementById("altair-viz-7cde8ab685c1450da830091babf98a00");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -65,7 +67,11 @@ Summary of [Seqfu](https://github.com/telatin/seqfu2) results from project: [{{ 
 
 
 
+[Download Table]({{ project().file_server() }}/tables/df_seqfu_stats.csv){:target="_blank" .md-button}
+
 ## References
+<font size="2">
 {% for i in project().rule_used['seqfu']['references'] %}
-  - *{{ i }}*
+- *{{ i }}*
 {% endfor %}
+</font>
